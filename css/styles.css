@@ -3,6 +3,7 @@
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,19 +31,29 @@ body::before {
 main {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  width: 35%;
+  min-width: 300px;
+  width: 65%;
   margin: auto;
-  border: 1px solid gray;
+  border: 1px solid #66666640;
   border-radius: 20px;
   background-color: rgba(25, 42, 81, 0.7);
   margin: 5vh auto;
   padding: 0.5vw 1vh;
 }
 
+@media (max-width: 800px) {
+  main {
+    width: 90%;
+  }
+}
+
 h1 {
   text-align: center;
   margin-top: 5vh;
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 form {
@@ -64,6 +75,8 @@ fieldset {
 
 #description {
   text-align: center;
+  width: 65%;
+  margin: 0 auto;
 }
 
 #general-information label {
@@ -73,17 +86,19 @@ fieldset {
 
 #textarea {
   margin: 1.5vh auto;
-  width: 90%;
+  width: 95%;
   min-height: 120px;
   resize: vertical;
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #submit {
-  margin: 1.5vh auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0.5vw;
-  width: 80%;
+  width: 95%;
+  border-radius: 5px;
 }
 
 #checkboxes label {
@@ -92,4 +107,30 @@ fieldset {
 
 #radio-buttons label {
   padding: 0.25rem;
+}
+
+#checkboxes label,
+#radio-buttons label {
+  font-size: 0.85em;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+  line-height: 2rem;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+fieldset {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#dropdown {
+  min-height: 40px;
+  width: 100%;
+  border-radius: 10px;
 }
