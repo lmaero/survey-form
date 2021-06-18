@@ -147,3 +147,11 @@ fieldset {
 a:visited {
   color: cornsilk;
 }
+
+a:link {
+  color: cornsilk;
+}
+
+a:hover {
+  color: salmon;
+}
