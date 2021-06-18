@@ -4,25 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Survey Form - freeCodeCamp Tests</title>
   </head>
 
   <body>
     <h1 id="title">Survey Form - freeCodeCamp Challenge</h1>
     <p id="description">a simple survey form to pass freeCodeCamp tests</p>
+
     <main>
       <form id="survey-form">
         <fieldset id="general-information">
           <label for="name" id="name-label">Name</label>
-          <input type="text" id="name" placeholder="Please enter your name" required />
+          <input
+            type="text"
+            id="name"
+            placeholder="Please enter your name"
+            required
+          />
 
           <label for="email" id="email-label">Email</label>
-          <input type="email" id="email" placeholder="Please enter your email" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Please enter your email"
+            required
+          />
 
           <label for="number" id="number-label">Age</label>
-          <input type="number" id="number" placeholder="Please enter your age" max="120" min="18" required />
+          <input
+            type="number"
+            id="number"
+            placeholder="Please enter your age"
+            max="120"
+            min="18"
+            required
+          />
 
-          <label for="dropdown">Which option describes your current role?</label>
+          <label for="dropdown">Which option describes your role?</label>
           <select name="dropdown" id="dropdown">
             <option value="">--Please choose an option--</option>
             <option value="">Student</option>
@@ -37,7 +60,12 @@
           <legend>Would you recommend freeCodeCamp to a friend?</legend>
 
           <label for="definitely">
-            <input type="radio" name="user-option" id="definitely" value="definitely" />
+            <input
+              type="radio"
+              name="user-option"
+              id="definitely"
+              value="definitely"
+            />
             Definitely
           </label>
 
@@ -47,7 +75,12 @@
           </label>
 
           <label for="not-sure">
-            <input type="radio" name="user-option" id="not-sure" value="not-sure" />
+            <input
+              type="radio"
+              name="user-option"
+              id="not-sure"
+              value="not-sure"
+            />
             Not sure
           </label>
         </fieldset>
@@ -56,22 +89,42 @@
           <legend>What would you like to see improved?</legend>
 
           <label for="front-end-projects">
-            <input type="checkbox" name="prefer" value="front-end-projects" id="front-end-projects" />
+            <input
+              type="checkbox"
+              name="prefer"
+              value="front-end-projects"
+              id="front-end-projects"
+            />
             Front-end Projects
           </label>
 
           <label for="back-end-projects">
-            <input type="checkbox" name="prefer" value="back-end-projects" id="back-end-projects" />
+            <input
+              type="checkbox"
+              name="prefer"
+              value="back-end-projects"
+              id="back-end-projects"
+            />
             Back-end Projects
           </label>
 
           <label for="data-visualization">
-            <input type="checkbox" name="prefer" value="data-visualization" id="data-visualization" />
+            <input
+              type="checkbox"
+              name="prefer"
+              value="data-visualization"
+              id="data-visualization"
+            />
             Data Visualization
           </label>
 
           <label for="challenges">
-            <input type="checkbox" name="prefer" value="challenges" id="challenges" />
+            <input
+              type="checkbox"
+              name="prefer"
+              value="challenges"
+              id="challenges"
+            />
             Challenges
           </label>
 
@@ -81,11 +134,29 @@
           </label>
         </fieldset>
 
-        <textarea name="textarea" id="textarea" placeholder="Enter your comments here..."></textarea>
+        <textarea
+          name="textarea"
+          id="textarea"
+          placeholder="Enter your comments here..."
+        >
+        </textarea>
 
         <button type="submit" id="submit">Submit</button>
       </form>
     </main>
+
+    <footer id="footer">
+      <p>
+        You can find more info about the author of this page at
+        <a href="https://github.com/lmaero">GitHub</a>
+      </p>
+
+      <br />
+
+      <p>
+        Copyright 2021. Author: <a href="https://lmaero.pro/">lmaero.pro</a>
+      </p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>
